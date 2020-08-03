@@ -36,6 +36,10 @@ nav li {
     padding: 20px;
 }
 
+.active{
+   color: yellow;
+}
+
 nav li .logo {
     font-weight: 100;
     font-size: 40px;

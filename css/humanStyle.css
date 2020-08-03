@@ -1,0 +1,162 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Ericsson Hilda", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    padding: 20px;
+}
+
+.active {
+    color: yellow;
+}
+
+nav li .logo {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+nav li:hover i {
+    transform: rotate(180deg);
+}
+
+#one {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    width: 95%;
+}
+
+#one a {
+    text-decoration: none;
+    padding: 3px;
+    color: black;
+    font-size: 0.8rem;
+}
+
+#two {
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    height: 230px;
+}
+
+#two span {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#two span button {
+    padding: 5px;
+    outline: none;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+#two span a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#two span a:hover {
+    color: rgb(160, 160, 196);
+    text-decoration: underline;
+}
+
+#two .left {
+    display: flex;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+#two .left p {
+    width: 40px;
+    font-size: 45px;
+    padding: 5px;
+    position: relative;
+    top: 25px;
+    left: 0px;
+}
+
+#two .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+#two .right p {
+    padding: 5px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#three{
+
+}
+
+@media only screen and (max-width:700px) {
+    * {
+        font-family: 'Bitter', serif;
+    }
+    nav {
+        position: relative;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    #two {
+        flex-direction: column;
+        height: 600px;
+        height: 10%;
+    }
+    #two .left p {
+        width: 100%;
+        font-size: 30px;
+        top: 0px;
+    }
+    #two .right {
+        align-items: flex-start;
+    }
+    #two span {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
