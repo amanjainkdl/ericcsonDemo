@@ -121,11 +121,120 @@ nav li:hover i {
 #two .right p {
     padding: 5px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #three{
+    display: flex;
+    justify-content: center;
+}
 
+#three video{
+    flex-basis: 100%;
+    height: auto;
+    outline: none;
+}
+
+#four{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 50px 30px;
+}
+
+#four .heading{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#four p{
+    padding : 5px;
+    margin-top: 10px;
+}
+
+#four button{
+    width: 120px;
+    margin-top: 20px;
+    outline: none;
+    padding: 10px;
+}
+
+#five{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+#five > div{
+     margin-top: 30px;
+}
+
+#five .one p{
+    padding: 5px;
+    font-size: 30px;
+}
+
+#five .two{
+    display: flex;
+    justify-content: space-between;
+}
+
+#five .two p,a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+#five .two a{    
+    font-size: 20px;
+}
+
+#five .two > div{
+    flex-basis: 30%;
+    height: 800px;
+}
+
+#five .two .top{
+    height: 40%;
+}
+
+#five .bottom{
+    margin-top: 10px;
+}
+
+.twoBox-1 .top{
+    background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
+}
+
+.twoBox-2 .top{
+    background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
+}
+
+.twoBox-3 .top{
+    background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
+}
+
+#five .two{
+    background-color: turquoise;
+}
+
+.twoBox-1 .bottom{
+    background-color: chocolate;
+}
+.twoBox-2 .bottom{
+    background-color: red;
+}
+.twoBox-3 .bottom{
+    background-color: yellow;
+}
+
+#six{
+    background-color: chartreuse;
+    height: 100px;
 }
 
 @media only screen and (max-width:700px) {
@@ -159,4 +268,19 @@ nav li:hover i {
         width: 100%;
         align-items: center;
     }
+    #four{
+        width: 95%;
+        margin: auto;
+    }
+    #four .heading,.para{
+        margin-top: 20px;
+    }
+    #five .two{
+        flex-direction: column;
+        width: 100%;
+    }
+    #five .two > div{
+      height: 510px;
+    }
+    
 }
