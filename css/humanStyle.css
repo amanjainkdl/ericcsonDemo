@@ -124,42 +124,42 @@ nav li:hover i {
     font-size: 18px;
 }
 
-#three{
+#three {
     display: flex;
     justify-content: center;
 }
 
-#three video{
+#three video {
     flex-basis: 100%;
     height: auto;
     outline: none;
 }
 
-#four{
+#four {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin: 50px 30px;
 }
 
-#four .heading{
+#four .heading {
     font-size: 30px;
     margin-top: 20px;
 }
 
-#four p{
-    padding : 5px;
+#four p {
+    padding: 5px;
     margin-top: 10px;
 }
 
-#four button{
+#four button {
     width: 120px;
     margin-top: 20px;
     outline: none;
     padding: 10px;
 }
 
-#five{
+#five {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -167,22 +167,22 @@ nav li:hover i {
     margin: auto;
 }
 
-#five > div{
-     margin-top: 30px;
+#five>div {
+    margin-top: 30px;
 }
 
-#five .one p{
+#five .one p {
     padding: 5px;
     font-size: 30px;
 }
 
-#five .two{
+#five .two {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#five .two p,a{
+#five .two p, a {
     margin-top: 10px;
     text-decoration: none;
     color: black;
@@ -191,40 +191,95 @@ nav li:hover i {
     word-wrap: break-word;
 }
 
-#five .two a{    
+#five .two a {
     font-size: 20px;
 }
 
-#five .two > div{
+#five .two>div {
     flex-basis: 30%;
     height: 650px;
 }
 
-#five .two .top{
+#five .two .top {
     height: 40%;
 }
 
-#five .bottom{
+#five .bottom {
     margin-top: 10px;
 }
 
-.twoBox-1 .top{
+.twoBox-1 .top {
     background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
 }
 
-.twoBox-2 .top{
+.twoBox-2 .top {
     background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
 }
 
-.twoBox-3 .top{
+.twoBox-3 .top {
     background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
 }
-#six{
+
+#six {
     display: flex;
     width: 95%;
     height: 700px;
     margin: auto;
     background: url('../resources/map.png') no-repeat center/cover;
+}
+
+#seven {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    background-color: tomato;
+}
+
+#seven .one{
+    background-color: violet;
+}
+
+#seven .one p{
+   font-size: 30px;
+   padding: 5px;
+}
+
+#seven .two{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+#seven .box-1,.box-2,.box-3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 500px;
+    flex-basis: 31%;
+    background-color: blue;
+}
+
+#seven .two .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    background-color: aquamarine;
+    border: 2px solid red;
+}
+
+#seven .two .bottom{
+    height: 58%;
+    background-color: brown;
+    border: 2px solid orange;
+}
+
+#seven video{
+    /* video alignment pending
+    min-height: 50vh; min-width: 50vw */
 }
 
 @media only screen and (max-width:700px) {
@@ -258,31 +313,33 @@ nav li:hover i {
         width: 100%;
         align-items: center;
     }
-    #four{
+    #four {
         width: 95%;
         margin: auto;
     }
-    #four .heading,.para{
+    #four .heading, .para {
         margin-top: 20px;
     }
-    #five .two{
+    #five .two {
         flex-direction: column;
         width: 100%;
     }
-    #five .two > div{
-      height: 510px;
+    #five .two>div {
+        height: 510px;
     }
-    
+    #seven .two{
+        flex-direction: column;
+    }
 }
 
-@media only screen and (max-width:930px){    
-    #five .two > div{
+@media only screen and (max-width:930px) {
+    #five .two>div {
         height: 800px;
     }
 }
 
-@media only screen and (max-width:810px){    
-    #five .two > div{
+@media only screen and (max-width:810px) {
+    #five .two>div {
         height: 900px;
     }
 }
