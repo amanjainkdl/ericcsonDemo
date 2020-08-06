@@ -161,6 +161,7 @@ nav li:hover i {
 
 #five{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 95%;
     margin: auto;
@@ -177,6 +178,7 @@ nav li:hover i {
 
 #five .two{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -195,7 +197,7 @@ nav li:hover i {
 
 #five .two > div{
     flex-basis: 30%;
-    height: 800px;
+    height: 650px;
 }
 
 #five .two .top{
@@ -217,24 +219,12 @@ nav li:hover i {
 .twoBox-3 .top{
     background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
 }
-
-#five .two{
-    background-color: turquoise;
-}
-
-.twoBox-1 .bottom{
-    background-color: chocolate;
-}
-.twoBox-2 .bottom{
-    background-color: red;
-}
-.twoBox-3 .bottom{
-    background-color: yellow;
-}
-
 #six{
-    background-color: chartreuse;
-    height: 100px;
+    display: flex;
+    width: 95%;
+    height: 700px;
+    margin: auto;
+    background: url('../resources/map.png') no-repeat center/cover;
 }
 
 @media only screen and (max-width:700px) {
@@ -283,4 +273,16 @@ nav li:hover i {
       height: 510px;
     }
     
+}
+
+@media only screen and (max-width:930px){    
+    #five .two > div{
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width:810px){    
+    #five .two > div{
+        height: 900px;
+    }
 }
